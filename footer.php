@@ -20,11 +20,6 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="https://instagram.com">
                                             <i class="ri-instagram-line"></i>
                                         </a>
@@ -44,18 +39,23 @@
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="about">
+                                        <i class="ri-arrow-right-s-line"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="services">
                                         <i class="ri-arrow-right-s-line"></i>
                                         Services
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="about">
+                                    <a href="team">
                                         <i class="ri-arrow-right-s-line"></i>
-                                        About Us
+                                        Team
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="gallery">
                                         <i class="ri-arrow-right-s-line"></i>
@@ -76,41 +76,24 @@
                             <h3 class="footer-widget-title">Services</h3>
                             <ul class="footer-menu list-style">
                                 <li>
-                                    <a href="services">
+                                    <a href="services#eventplanning">
                                         <i class="ri-arrow-right-s-line"></i>
-                                        Event Planning
+                                        Corperate Events and MICE
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="services">
+                                    <a href="services#photograpy">
                                         <i class="ri-arrow-right-s-line"></i>
-                                        Photograpy Event
+                                        BTL Activities
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="services">
+                                    <a href="services#corporate">
                                         <i class="ri-arrow-right-s-line"></i>
-                                        Corporate Events
+                                        Entertainment & Personal Events
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="services">
-                                        <i class="ri-arrow-right-s-line"></i>
-                                        On-site-management
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services">
-                                        <i class="ri-arrow-right-s-line"></i>
-                                        Anniversary Program
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services">
-                                        <i class="ri-arrow-right-s-line"></i>
-                                        Reception
-                                    </a>
-                                </li>
+                
                                
                             </ul>
                         </div>
@@ -138,7 +121,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-7 col-md-6 col-sm-6 ps-xxl-5">
                         <div class="footer-widget">
-                            <h3 class="footer-widget-title">Official Info</h3>
+                            <h3 class="footer-widget-title">Connect Us</h3>
                             <ul class="contact-info list-style">
                                 <li>
                                     <i class="ri-map-pin-fill"></i>
@@ -154,7 +137,9 @@
                                 <li>
                                     <i class="ri-phone-fill"></i>
                                     <h6>Phone</h6>
-                                    <a href="tel:+919947920626">+91-9947920626</a>
+                                    <a href="tel:+919947920626">+91-9947920626</a><br>
+                                    <a href="tel:+917046403791">+91-7046403791</a>
+
                                 </li>
                             </ul>
                         </div>
@@ -162,7 +147,7 @@
                 </div>
             </div>
             <p class="copyright-text"><i class="ri-copyright-line"></i><span>Copyright 2023</span><a
-                    href="https://Gokraft.com/"> Gokraft </a>All rights reserved</p>
+                    href="https://Gokraft.in/"> Gokraft </a>All rights reserved</p>
         </footer>
         <!-- Footer Section End -->
 

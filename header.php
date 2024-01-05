@@ -30,15 +30,6 @@
     </div>
     <!--Preloader ends-->
 
-    <!-- Theme Switcher Start -->
-    <!-- <div class="switch-theme-mode">
-        <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-        </label>
-    </div> -->
-    <!-- Theme Switcher End -->
-
     <!-- Page Wrapper End -->
     <div class="page-wrapper">
 
@@ -68,15 +59,15 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="header-top-right">
-                               
+
                                 <ul class="social-profile list-style style1">
                                     <li>
                                         <a href="https://facebook.com">
                                             <i class="flaticon-facebook"></i>
                                         </a>
                                     </li>
-                                 
-                                  
+
+
                                     <li>
                                         <a href="https://instagram.com">
                                             <i class="flaticon-instagram"></i>
@@ -91,7 +82,7 @@
             <div class="header-bottom">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index">
+                        <a class="navbar-brand" href="./">
                             <img class="logo-light" src="images/gokraft-logo.png" alt="logo">
                             <img class="logo-dark" src="images/gokraft-logo-footer.png" alt="logo">
                         </a>
@@ -101,7 +92,7 @@
                             </div>
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item has-child">
-                                    <a href="index" class="nav-link">
+                                    <a href="./" class="nav-link">
                                         Home
                                     </a>
                                 </li>
@@ -116,18 +107,23 @@
                                     </a>
                                 </li>
                                 <li class="nav-item has-child">
+                                    <a href="team" class="nav-link">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item has-child">
                                     <a href="gallery" class="nav-link">
                                         Gallery
                                     </a>
 
                                 </li>
-                               
+
 
                                 <li class="nav-item">
                                     <a href="contact" class="nav-link">Contact Us</a>
                                 </li>
                                 <li class="nav-item d-lg-none">
-                                    <a href="appointment" class="nav-link btn style1">Book Appointment</a>
+                                    <a href="appointment" class="nav-link btn style1">Connect Now</a>
                                 </li>
                             </ul>
                             <div class="other-options md-none">
@@ -136,7 +132,7 @@
                                 </div>
 
                                 <div class="option-item">
-                                    <a href="appointment" class="btn style1">Book Now</a>
+                                    <a href="appointment" class="btn style1">Connect Now</a>
                                 </div>
                             </div>
                         </div>

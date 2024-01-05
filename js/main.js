@@ -138,6 +138,8 @@
         autoplayHoverPause: false,
         responsiveClass: true,
         autoHeight: true,
+        touchDrag: false,
+        mouseDrag: false
     });
     $(".hero-slider-two").owlCarousel({
         nav: true,
@@ -312,7 +314,7 @@
         nav: false,
         dots: false,
         loop: true,
-        margin: 20,
+        margin: 0,
         items: 1,
         thumbs: false,
         smartSpeed: 1300,

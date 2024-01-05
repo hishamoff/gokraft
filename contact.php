@@ -22,7 +22,7 @@ include ('header.php');
         <div class="row">
             <div class="col-xl-8 col-lg-7 col-12">
                 <div class="contact-form">
-                    <form class="form-wrap" id="contactForm">
+                    <form class="form-wrap query_form" method="POST" id="contactForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -44,7 +44,7 @@ include ('header.php');
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="msg_subject" placeholder="Subject*" id="msg_subject" required="" data-error="Please enter your subject">
+                                    <input type="text" name="subject" placeholder="Subject*" id="subject" required="" data-error="Please enter your subject">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -62,12 +62,58 @@ include ('header.php');
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn style1">Send Message</button>
+                                <button type="submit" onclick="Send()" class="btn style1">Send Message</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
                         </div>
                     </form>
+
+                    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                            <script src="https://smtpjs.com/v3/smtp.js"></script>
+                            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+                            <script>
+
+                                function Send() {
+                                    event.preventDefault();
+
+                                    var name = document.getElementById("name").value;
+                                    var email = document.getElementById("email").value;
+                                    var phone = document.getElementById("phone").value;
+                                    var subject = document.getElementById("subject").value;
+                                    var message = document.getElementById("message").value;
+
+                                    // Validation: Check if any of the required fields is empty
+                                    if (!name || !email || !phone || !subject || !message) {
+                                        swal("Error", "Please fill in all the required fields.", "error");
+                                        return; // Stop execution if validation fails
+                                    }
+                                    // Update button text
+                                    $('.query_form .btn').text('Sending...');
+
+                                    var body = "name: " + name + "<br/> email:" + email + "<br/> contact:" + phone + "<br/> subject:" + subject + "<br/> Message:" + message;
+
+                                    console.log(body);
+                                    Email.send({
+                                        Host: "smtp.elasticemail.com",
+                                        Username: "website.enquiry.mailer@gmail.com",
+                                        Password: "88A13DA696E1DA754571F28C500545642B31",
+                                        To: 'hisham1off@gmail.com, hishamkukku1@gmail.com', // Add the second email address here
+                                        From: "website.enquiry.mailer@gmail.com",
+                                        Subject: "Gokraft Website Enquiry",
+                                        Body: body
+                                    }).then(function (message) {
+                                        // Handle email sending success or failure if needed
+                                        // Assuming the button should be updated here as well
+                                        $('.query_form .btn').text('Message send');
+                                        $('.query_form')[0].reset();
+                                    });
+                                }
+                                ;
+                            </script>
+
                 </div>
             </div>
             <div class="col-xl-4 col-lg-5 col-md-12">
@@ -97,6 +143,7 @@ include ('header.php');
                         <div class="contact-info">
                             <h3>Phone Number</h3>
                             <a href="tel:+919947920626">+91 9947920626</a>
+                            <a href="tel:+917046403791">+91-7046403791</a>
                         </div>
                     </div>
                 </div>
